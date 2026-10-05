@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avishek Karki | IT Student & Aspiring Full Stack Developer</title>
+  <meta name="description" content="Personal portfolio website for Avishek Karki, an IT Student & Aspiring Full Stack Developer passionate about modern web technologies and AI.">
+  <meta property="og:title" content="Avishek Karki | IT Student & Aspiring Full Stack Developer">
+  <meta property="og:description" content="Personal portfolio website for Avishek Karki, an IT Student & Aspiring Full Stack Developer passionate about modern web technologies and AI.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Avishek Karki Home">
+        <span class="brand-badge" aria-hidden="true">AK</span>
+        <span>Avishek Karki</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Mobile Trigger) -->
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle dark and light theme" title="Toggle theme">
+          <svg id="themeIcon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileDrawer" class="mobile-menu-drawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HOME / HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-greeting">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for learning opportunities</span>
+          </div>
+          <h1 class="hero-name">Avishek Karki</h1>
+          <p class="hero-role">IT Student &amp; Aspiring Full Stack Developer</p>
+          <p class="hero-bio">
+            I am an IT student passionate about web development, software technologies, and artificial intelligence. I am continuously developing my technical skills and working toward becoming a skilled Full Stack Developer.
+          </p>
+          <p class="hero-sub-learning">
+            Currently focused on deliberate practice, building foundational projects, and learning modern web standards.
+          </p>
+          <div class="hero-actions">
+            <a href="#skills" class="btn btn-primary">
+              Explore My Skills
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              View Projects
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-card">
+              <div class="avatar-image-frame">
+                <img
+                  id="avatarImg"
+                  class="avatar-img"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuACJ-yKVhPuSJOHGEwpYkykIhRPJiACOyt03RwjlHWP0DZln_4bpoo2LsOau3ESV_16dg8C_KL7XhVjTRvnXuAofxhkhypA5EBMbHaPQpkSpr66a67F67cEQO1n9YQxsOwDen_guggC1vvAELvfBm8WT_h87Q5UY4O9WCFKfnkqMykgnJs9wTa9MMEiTIhdBSNiIbpzoWN5cFHp_hrkOl9lh6DII5A8mEcWM3LtEnSmvQL2MzP-3FeknX5-4CMRmmd9qA"
+                  alt="Avishek Karki"
+                >
+                <span id="avatarFallback" class="avatar-fallback" aria-hidden="true">AK</span>
+              </div>
+              <div class="avatar-badge-text">Avishek Karki</div>
+              <div class="avatar-subtext">BSc. IT Student • Web &amp; AI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-card">
+          <p class="about-paragraph">
+            I am a first-year Bachelor of Science in Information Technology student at LBEF College, affiliated with Asia Pacific University (APU). I have a strong interest in information technology, especially web development and artificial intelligence. I enjoy learning new technologies, improving my programming skills, and understanding how modern digital products are built. My current goal is to strengthen my development skills and gradually grow into a capable Full Stack Developer.
+          </p>
+
+          <div class="highlights-grid">
+            <div class="highlight-item">
+              <span class="highlight-label">Current Role</span>
+              <span class="highlight-value">IT Student</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Current Focus</span>
+              <span class="highlight-value">Web Development &amp; AI</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Career Goal</span>
+              <span class="highlight-value">Full Stack Developer</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Education</span>
+              <span class="highlight-value">BSc. IT (1st Year)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS & CURRENTLY LEARNING -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Skills &amp; Currently Learning</h2>
+          <p class="section-lead">
+            I have built a foundation in several web development technologies and I am currently sharpening my skills through continuous practice, projects, and learning.
+          </p>
+        </div>
+
+        <!-- Primary Skill Cards Grid -->
+        <div class="skills-grid">
+          <!-- HTML -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-badge" aria-hidden="true">&lt;/&gt;</div>
+              <h3 class="skill-name">HTML</h3>
+            </div>
+            <p class="skill-desc">Web structure and semantic markup.</p>
+          </div>
+
+          <!-- CSS -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-badge" aria-hidden="true">#</div>
+              <h3 class="skill-name">CSS</h3>
+            </div>
+            <p class="skill-desc">Responsive layouts, styling, and modern UI design.</p>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-badge" aria-hidden="true">JS</div>
+              <h3 class="skill-name">JavaScript</h3>
+            </div>
+            <p class="skill-desc">Interactive web experiences and frontend programming.</p>
+          </div>
+
+          <!-- Node.js -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-badge" aria-hidden="true">N</div>
+              <h3 class="skill-name">Node.js</h3>
+            </div>
+            <p class="skill-desc">Backend development and server-side JavaScript.</p>
+          </div>
+
+          <!-- Microsoft SQL -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-badge" aria-hidden="true">SQL</div>
+              <h3 class="skill-name">Microsoft SQL</h3>
+            </div>
+            <p class="skill-desc">Working with relational databases and SQL queries.</p>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-badge" aria-hidden="true">DB</div>
+              <h3 class="skill-name">MongoDB</h3>
+            </div>
+            <p class="skill-desc">Working with NoSQL databases and data storage.</p>
+          </div>
+
+          <!-- Tailwind CSS -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-badge" aria-hidden="true">TW</div>
+              <h3 class="skill-name">Tailwind CSS</h3>
+            </div>
+            <p class="skill-desc">Utility-first approach to modern interface development.</p>
+          </div>
+        </div>
+
+        <!-- Sharpening & Tools Subsections -->
+        <div class="skills-subsections">
+          <!-- Currently Sharpening -->
+          <div class="sub-card">
+            <h3 class="sub-card-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+              Currently Sharpening
+            </h3>
+            <div class="tags-container">
+              <span class="pill-tag">Full Stack Development</span>
+              <span class="pill-tag">JavaScript</span>
+              <span class="pill-tag">Backend Development</span>
+              <span class="pill-tag">Database Skills</span>
+              <span class="pill-tag">Modern Web Development</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="sub-card">
+            <h3 class="sub-card-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+              Tools &amp; Environment
+            </h3>
+            <div class="tags-container">
+              <span class="pill-tag">VS Code</span>
+              <span class="pill-tag">GitHub</span>
+              <span class="pill-tag">Figma</span>
+              <span class="pill-tag">Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-lead">
+            Practice projects and exercises created while developing programming fundamentals and full stack web development skills.
+          </p>
+        </div>
+
+        <!-- Student Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Royal Musk -->
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-header-row">
+                <span class="project-tech-badge">HTML</span>
+                <a href="https://github.com/Avishek1Karki" target="_blank" rel="noopener noreferrer" class="project-github-icon" aria-label="GitHub repository for Royal Musk">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="project-title">Royal Musk</h3>
+              <p class="project-desc">
+                A web development project created to practice building a modern product-focused website.
+              </p>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Avishek1Karki" target="_blank" rel="noopener noreferrer" class="project-link">
+                View on GitHub
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Simple Project -->
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-header-row">
+                <span class="project-tech-badge">Web Development</span>
+                <a href="https://github.com/Avishek1Karki" target="_blank" rel="noopener noreferrer" class="project-github-icon" aria-label="GitHub repository for Simple Project">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="project-title">Simple Project</h3>
+              <p class="project-desc">
+                A student project created to practice fundamental web development and programming concepts.
+              </p>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Avishek1Karki" target="_blank" rel="noopener noreferrer" class="project-link">
+                View on GitHub
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Python -->
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-header-row">
+                <span class="project-tech-badge">Python</span>
+                <a href="https://github.com/Avishek1Karki" target="_blank" rel="noopener noreferrer" class="project-github-icon" aria-label="GitHub repository for Python Exercises">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+              <h3 class="project-title">Python</h3>
+              <p class="project-desc">
+                A collection of Python learning exercises and practice programs created while developing programming fundamentals.
+              </p>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Avishek1Karki" target="_blank" rel="noopener noreferrer" class="project-link">
+                View on GitHub
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Stitch Design: Projects Coming Soon / Building Notice -->
+        <div class="projects-empty-state">
+          <div class="empty-state-badge">
+            <span class="pulse-dot"></span>
+            Currently Building
+          </div>
+          <div class="empty-state-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              <line x1="12" y1="11" x2="12" y2="17"></line>
+              <line x1="9" y1="14" x2="15" y2="14"></line>
+            </svg>
+          </div>
+          <h3 class="empty-state-title">Projects Coming Soon</h3>
+          <p class="empty-state-desc">
+            I am currently building and improving my projects while developing my skills in web development and full stack technologies. New projects will be added here as I complete them.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION SECTION -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Timeline</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="education-timeline">
+          <!-- Degree 1 -->
+          <article class="education-card">
+            <div class="edu-header">
+              <h3 class="edu-degree">Bachelor of Science in Information Technology</h3>
+              <span class="edu-period">2026 – 2029</span>
+            </div>
+            <div class="edu-institution">LBEF College — Affiliated with Asia Pacific University (APU)</div>
+            <div class="edu-details">
+              <span><strong>Status:</strong> Currently Studying</span>
+              <span>•</span>
+              <span><strong>Year:</strong> 1st Year, 2nd Semester</span>
+            </div>
+          </article>
+
+          <!-- Degree 2 -->
+          <article class="education-card">
+            <div class="edu-header">
+              <h3 class="edu-degree">Higher Secondary Education (+2)</h3>
+            </div>
+            <div class="edu-institution">NIST College</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+        </div>
+
+        <div class="contact-card">
+          <p class="contact-lead">
+            I'm always interested in connecting with other developers, students, and people interested in technology. Feel free to find me on my professional platforms.
+          </p>
+
+          <div class="contact-links-container">
+            <a href="https://github.com/Avishek1Karki" class="social-button-row" target="_blank" rel="noopener noreferrer" aria-label="Visit Avishek Karki on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/avishek-karki-abb384399" class="social-button-row" target="_blank" rel="noopener noreferrer" aria-label="Visit Avishek Karki on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <div class="footer-brand-title">Avishek Karki</div>
+        <div class="footer-brand-desc">IT Student &amp; Aspiring Full Stack Developer</div>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 Avishek Karki. All rights reserved.
+      </div>
+
+      <div class="footer-icons">
+        <a href="https://github.com/Avishek1Karki" class="footer-icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/avishek-karki-abb384399" class="footer-icon-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript -->
+  <script src="./script.js"></script>
+</body>
+</html>
